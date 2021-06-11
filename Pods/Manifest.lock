@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Differentiator (4.0.1)
+  - FCAlertView (1.4.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreData (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - FCAlertView
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView/Extended
+  - RxAlamofire
+  - RxCocoa
+  - RxCoreData
+  - RxDataSources
+  - RxGesture
+  - RxSwift (~> 5.0)
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - FCAlertView
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - RxAlamofire
+    - RxCocoa
+    - RxCoreData
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FCAlertView: fdddd63381898c1d1a5a20c9f084fbd2c6d12f8b
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCoreData: 1ed5f83e80facccc90fc054eb7f39a44177de56a
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 40a1707ca8985d4eebcbed2faf4c0c3aeaa06b84
+
+COCOAPODS: 1.10.0
