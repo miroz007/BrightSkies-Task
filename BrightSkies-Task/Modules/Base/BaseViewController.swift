@@ -21,7 +21,7 @@ class BaseViewController: UIViewController , NVActivityIndicatorViewable{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,6 +31,9 @@ class BaseViewController: UIViewController , NVActivityIndicatorViewable{
 
     deinit {
         print("deinit :\(self.description)")
+    }
+    
+    func setupUI()  {
     }
     
     func killLoading(){

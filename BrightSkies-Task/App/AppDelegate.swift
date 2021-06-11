@@ -6,36 +6,36 @@
 //
 
 import UIKit
+import RxSwift
 import CoreData
 
-@main
+@UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
-        
+    var newBackImage = UIImage(named: "coloredBackArrow")
+    private let disposeBag = DisposeBag()
+    
+    lazy var navigationController: UINavigationController = {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.isNavigationBarHidden = false
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.tintColor = .blue
+        navigationController.navigationBar.backIndicatorImage = newBackImage
+        navigationController.navigationBar.backIndicatorTransitionMaskImage = newBackImage
+        return navigationController
+    }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Set navigation controller as root view
-        setRoot()
+        setRoot(window: window)
         return true
     }
     
-    func setRoot(){
-        let navigationController = UINavigationController(rootViewController: LoginVC())
-        navigationController.navigationBar.isTranslucent = true
-        if #available(iOS 11.0, *) {
-            navigationController.navigationBar.prefersLargeTitles = true
-            navigationController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
-        } else {
-            // Fallback on earlier versions
-        }
-        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController.navigationBar.shadowImage = UIImage()
-        navigationController.navigationBar.tintColor = .white
-        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
-    }
+   
             
     // MARK: - Core Data stack
     

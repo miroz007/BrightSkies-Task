@@ -42,6 +42,10 @@
 		295444062673B8490050CE58 /* SMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444032673B8490050CE58 /* SMS.swift */; };
 		295444072673B8490050CE58 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444042673B8490050CE58 /* Logging.swift */; };
 		295444082673B8490050CE58 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444052673B8490050CE58 /* ActivityIndicator.swift */; };
+		2954440D2673DE650050CE58 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2954440B2673DE650050CE58 /* LoginVC.swift */; };
+		295444122673DEA10050CE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444112673DEA10050CE58 /* LoginViewModel.swift */; };
+		295444142673E5160050CE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444132673E5160050CE58 /* SceneDelegate.swift */; };
+		295444162673E8280050CE58 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444152673E8280050CE58 /* AppCoordinator.swift */; };
 		3C7E31E90C90E868E0EF93CF /* Pods_BrightSkies_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,10 @@
 		295444032673B8490050CE58 /* SMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMS.swift; sourceTree = "<group>"; };
 		295444042673B8490050CE58 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		295444052673B8490050CE58 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		2954440B2673DE650050CE58 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		295444112673DEA10050CE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		295444132673E5160050CE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		295444152673E8280050CE58 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		DEBDC3B2134FA68B5ACC76D5 /* Pods-BrightSkies-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSkies-Task.debug.xcconfig"; path = "Target Support Files/Pods-BrightSkies-Task/Pods-BrightSkies-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightSkies_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +158,8 @@
 			children = (
 				295443C92673B7D20050CE58 /* AppDelegate.swift */,
 				295443CA2673B7D20050CE58 /* AppDependency.swift */,
+				295444132673E5160050CE58 /* SceneDelegate.swift */,
+				295444152673E8280050CE58 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -170,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				295443D92673B7F00050CE58 /* Base */,
+				295444092673DD4F0050CE58 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -247,6 +258,31 @@
 				295444052673B8490050CE58 /* ActivityIndicator.swift */,
 			);
 			path = Utilty;
+			sourceTree = "<group>";
+		};
+		295444092673DD4F0050CE58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				295444102673DE8F0050CE58 /* View Model */,
+				2954440E2673DE6D0050CE58 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2954440E2673DE6D0050CE58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2954440B2673DE650050CE58 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		295444102673DE8F0050CE58 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				295444112673DEA10050CE58 /* LoginViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		86D745189159D97143D9DBDE /* Pods */ = {
@@ -391,9 +427,12 @@
 				295443DC2673B7F00050CE58 /* BaseViewModel.swift in Sources */,
 				295443D72673B7D90050CE58 /* Constants.swift in Sources */,
 				295444012673B8340050CE58 /* UITextFieldX.swift in Sources */,
+				295444122673DEA10050CE58 /* LoginViewModel.swift in Sources */,
 				295443F62673B8340050CE58 /* UIImageView+SDWebImage.swift in Sources */,
+				2954440D2673DE650050CE58 /* LoginVC.swift in Sources */,
 				295443DD2673B7F00050CE58 /* BaseViewController.swift in Sources */,
 				295443CB2673B7D20050CE58 /* AppDelegate.swift in Sources */,
+				295444142673E5160050CE58 /* SceneDelegate.swift in Sources */,
 				295443C52673B7C90050CE58 /* APICallError.swift in Sources */,
 				295443C32673B7C90050CE58 /* APIResult.swift in Sources */,
 				295443FC2673B8340050CE58 /* UIImageViewX.swift in Sources */,
@@ -402,6 +441,7 @@
 				295443F52673B8340050CE58 /* UIViewController+Reactive.swift in Sources */,
 				295443F92673B8340050CE58 /* UILabelX.swift in Sources */,
 				295443D62673B7D90050CE58 /* DateGeneric.swift in Sources */,
+				295444162673E8280050CE58 /* AppCoordinator.swift in Sources */,
 				295444062673B8490050CE58 /* SMS.swift in Sources */,
 				295443F42673B8340050CE58 /* Dictionary+CamelCase.swift in Sources */,
 				295443CC2673B7D20050CE58 /* AppDependency.swift in Sources */,

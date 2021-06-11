@@ -14,7 +14,7 @@ enum InternetConnectionErrorCode: Int {
 }
 
 //MARK:- Global Variables
-let Application                         = UIApplication.shared.delegate as! AppDelegate
+let Application = UIApplication.shared.delegate as! AppDelegate
 var AppName: String {return Bundle.main.infoDictionary!["CFBundleName"] as! String}
 var AppDisplayName: String {return Bundle.main.infoDictionary!["CFBundleDisplayName"] as! String}
 

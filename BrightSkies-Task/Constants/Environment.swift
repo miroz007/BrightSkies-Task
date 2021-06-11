@@ -21,11 +21,11 @@ class Environment {
     class func APIBasePath() -> String {
         switch self.server {
             case .developement:
-                return "https://pastebin.com/raw/"
+                return "http://api.npoint.io/"
             case .staging:
-                return "https://pastebin.com/raw/"
+                return "http://api.npoint.io/"
             case .production:
-                return "https://pastebin.com/raw/"
+                return "http://api.npoint.io/"
         }
     }
 }

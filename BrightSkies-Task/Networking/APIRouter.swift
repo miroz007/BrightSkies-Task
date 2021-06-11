@@ -11,23 +11,20 @@ import Alamofire
 
 
 enum APIRouter:URLRequestConvertible {
-    case getCategories
-    case getNewEpisodes
-    case getChannels
+    case getRecipes
         
     func asURLRequest() throws -> URLRequest {
         
         var method: HTTPMethod {
             switch self {
-            case .getCategories,.getChannels,.getNewEpisodes:
+            case .getRecipes:
                 return .get
             }
         }
         
         let params: ([String: Any]?) = {
             switch self {
-            case .getCategories,.getChannels,.getNewEpisodes:
-                return nil
+            case .getRecipes: return nil
             }
         }()
         
@@ -41,12 +38,8 @@ enum APIRouter:URLRequestConvertible {
             // build up and return the URL for each endpoint
             let relativePath: String? = {
                 switch self {
-                case .getCategories:
-                    return "A0CgArX3"
-                case .getNewEpisodes:
-                    return "z5AExTtw"
-                case .getChannels:
-                    return "Xt12uVhM"
+                case .getRecipes:
+                    return "43427003d33f1f6b51cc"
                 }
             }()
             

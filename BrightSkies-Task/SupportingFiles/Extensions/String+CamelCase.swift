@@ -64,4 +64,25 @@ extension String {
         return attributedString
     }
     
+    func isValidPassword(pass: String) -> Bool {
+        if pass.count < 6 {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func isValidateEmail(email:String) -> Bool {
+        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+        return emailPredicate.evaluate(with: email)
+    }
+    
+    var isBlank: Bool {
+          get {
+              let trimmed = trimmingCharacters(in: CharacterSet.whitespaces)
+              return trimmed.isEmpty
+          }
+      }
+    
 }

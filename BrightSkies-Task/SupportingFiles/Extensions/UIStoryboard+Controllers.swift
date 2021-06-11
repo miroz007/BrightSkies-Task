@@ -21,12 +21,12 @@ extension UIStoryboard {
 extension UIStoryboard {
     
     
-    //    var homeViewController: HomeVC {
-    //        guard let viewController = instantiateViewController(withIdentifier: String(describing: HomeVC.self)) as? HomeVC else {
-    //            fatalError(String(describing: HomeVC.self) + "\(NSLocalizedString("couldn't be found in Storyboard file", comment: ""))")
-    //        }
-    //        return viewController
-    //    }
+        var loginVC: LoginVC {
+            guard let viewController = instantiateViewController(withIdentifier: String(describing: LoginVC.self)) as? LoginVC else {
+                fatalError(String(describing: LoginVC.self) + "\(NSLocalizedString("couldn't be found in Storyboard file", comment: ""))")
+            }
+            return viewController
+        }
 }
 
 
