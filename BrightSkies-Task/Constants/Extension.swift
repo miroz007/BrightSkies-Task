@@ -117,7 +117,7 @@ extension UIApplication {
 extension UIViewController{
     func showAlert(withMessage message:String, withActions actions: UIAlertAction... ,withStyle style:UIAlertController.Style = .alert) {
         
-        let alert = UIAlertController(title: AppDisplayName, message: message, preferredStyle: style)
+        let alert = UIAlertController(title: "Warnning", message: message, preferredStyle: style)
         if actions.count == 0 {
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
         } else {

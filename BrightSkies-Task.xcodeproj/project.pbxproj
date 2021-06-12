@@ -46,6 +46,8 @@
 		295444122673DEA10050CE58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444112673DEA10050CE58 /* LoginViewModel.swift */; };
 		295444142673E5160050CE58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444132673E5160050CE58 /* SceneDelegate.swift */; };
 		295444162673E8280050CE58 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444152673E8280050CE58 /* AppCoordinator.swift */; };
+		298AFDEC2674400B003DE925 /* BrightSkies-Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDEA2674400B003DE925 /* BrightSkies-Task.xcdatamodeld */; };
+		298AFDF026744A9D003DE925 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDEF26744A9D003DE925 /* RecipesModel.swift */; };
 		3C7E31E90C90E868E0EF93CF /* Pods_BrightSkies_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		295444112673DEA10050CE58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		295444132673E5160050CE58 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		295444152673E8280050CE58 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		298AFDEB2674400B003DE925 /* IBTTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IBTTask.xcdatamodel; sourceTree = "<group>"; };
+		298AFDEF26744A9D003DE925 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		DEBDC3B2134FA68B5ACC76D5 /* Pods-BrightSkies-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSkies-Task.debug.xcconfig"; path = "Target Support Files/Pods-BrightSkies-Task/Pods-BrightSkies-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightSkies_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +141,7 @@
 				295443E02673B8130050CE58 /* SupportingFiles */,
 				295444022673B8490050CE58 /* Utilty */,
 				295443B72673B6B50050CE58 /* Info.plist */,
+				298AFDEA2674400B003DE925 /* BrightSkies-Task.xcdatamodeld */,
 			);
 			path = "BrightSkies-Task";
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			children = (
 				295443D92673B7F00050CE58 /* Base */,
 				295444092673DD4F0050CE58 /* Login */,
+				298AFDED267442ED003DE925 /* List of Recipes */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -283,6 +289,22 @@
 				295444112673DEA10050CE58 /* LoginViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		298AFDED267442ED003DE925 /* List of Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				298AFDEE26744A87003DE925 /* Model */,
+			);
+			path = "List of Recipes";
+			sourceTree = "<group>";
+		};
+		298AFDEE26744A87003DE925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				298AFDEF26744A9D003DE925 /* RecipesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		86D745189159D97143D9DBDE /* Pods */ = {
@@ -426,6 +448,7 @@
 				295443FE2673B8340050CE58 /* UIViewX.swift in Sources */,
 				295443DC2673B7F00050CE58 /* BaseViewModel.swift in Sources */,
 				295443D72673B7D90050CE58 /* Constants.swift in Sources */,
+				298AFDEC2674400B003DE925 /* BrightSkies-Task.xcdatamodeld in Sources */,
 				295444012673B8340050CE58 /* UITextFieldX.swift in Sources */,
 				295444122673DEA10050CE58 /* LoginViewModel.swift in Sources */,
 				295443F62673B8340050CE58 /* UIImageView+SDWebImage.swift in Sources */,
@@ -437,6 +460,7 @@
 				295443C32673B7C90050CE58 /* APIResult.swift in Sources */,
 				295443FC2673B8340050CE58 /* UIImageViewX.swift in Sources */,
 				295443D52673B7D90050CE58 /* Environment.swift in Sources */,
+				298AFDF026744A9D003DE925 /* RecipesModel.swift in Sources */,
 				295444002673B8340050CE58 /* UIVisualEffectViewX.swift in Sources */,
 				295443F52673B8340050CE58 /* UIViewController+Reactive.swift in Sources */,
 				295443F92673B8340050CE58 /* UILabelX.swift in Sources */,
@@ -652,6 +676,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		298AFDEA2674400B003DE925 /* BrightSkies-Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				298AFDEB2674400B003DE925 /* IBTTask.xcdatamodel */,
+			);
+			currentVersion = 298AFDEB2674400B003DE925 /* IBTTask.xcdatamodel */;
+			path = "BrightSkies-Task.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2954439E2673B6B30050CE58 /* Project object */;
 }

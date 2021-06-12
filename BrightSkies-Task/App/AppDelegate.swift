@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var navigationController: UINavigationController = {
         let navigationController = UINavigationController()
         navigationController.navigationBar.isTranslucent = false
-        navigationController.isNavigationBarHidden = false
+        navigationController.isNavigationBarHidden = true
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()
         navigationController.navigationBar.tintColor = .blue
@@ -31,12 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Set navigation controller as root view
+        if #available(iOS 13.0, *) {
+            window?.overrideUserInterfaceStyle = .light
+        }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = self.navigationController
         setRoot(window: window)
         return true
     }
     
-   
-            
+    
+    
     // MARK: - Core Data stack
     
     lazy var applicationDocumentsDirectory: URL = {
@@ -76,6 +81,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
-
+    
 }
 

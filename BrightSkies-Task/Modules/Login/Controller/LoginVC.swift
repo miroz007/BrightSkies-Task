@@ -60,10 +60,10 @@ class LoginVC: BaseViewController {
     @IBAction func showPassword(_ sender:UIButton) {
         if self.passwordTF.isSecureTextEntry {
             self.passwordTF.isSecureTextEntry = false
-            sender.setImage(#imageLiteral(resourceName: "visibility"), for: .normal)
+            sender.setImage(#imageLiteral(resourceName: "invisible"), for: .normal)
         }else{
             self.passwordTF.isSecureTextEntry = true
-            sender.setImage(#imageLiteral(resourceName: "visibility_off"), for: .normal)
+            sender.setImage(#imageLiteral(resourceName: "eye"), for: .normal)
         }
     }
     
