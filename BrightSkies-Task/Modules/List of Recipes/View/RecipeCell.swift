@@ -16,6 +16,8 @@ class RecipeCell: UITableViewCell {
     @IBOutlet weak var rateLabel: UILabel!
     @IBOutlet weak var favBtn: UIButton!
     
+    var isFav = false
+    
     static let identifier = "RecipeCell"
     var cellDelegate: favoriteDelegate?
     

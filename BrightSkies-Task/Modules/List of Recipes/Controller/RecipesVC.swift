@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxCoreData
 
 protocol favoriteDelegate : AnyObject {
     func didPressButton(_ tag: Int)
@@ -97,5 +98,7 @@ extension RecipesVC: favoriteDelegate {
     func didPressButton(_ tag: Int) {
         let indexPath = IndexPath(row: tag, section: 0)
         let cell = tableView.dequeueReusableCell(withIdentifier: RecipeCell.identifier, for: indexPath) as! RecipeCell
+        cell.isFav = true
+        // cache at core data RecipesModel.isFav
     }
 }

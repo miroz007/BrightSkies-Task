@@ -33,7 +33,7 @@ struct RecipesModel {
     var ratings : Int!
     var time : String!
     var weeks : [String]!
-    
+    var isFav = false
 
     
     /**
