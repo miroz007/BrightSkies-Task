@@ -1,62 +1,79 @@
 //
 //  API.swift
-//  BrightSkies-Task
+//  MovieApp
 //
-//  .
-//  Copyright © 2021 . All rights reserved.
+//  Created by Amir Samir on 12/11/18.
+//  Copyright © 2018 Amir Samir. All rights reserved.
 //
 
 import Foundation
 import RxSwift
 import RxAlamofire
 import Alamofire
-import SwiftyJSON
 
-class API {
+final class API {
     
     static let shared:API = {
         let instance = API()
         return instance
     }()
     
-    init() {
+    private init() {
         
     }
     
-   private static func handleDataRequest(dataRequest: Observable<DataRequest>) -> Observable<JSON?> {
+    
+    private static func handleDataRequest(dataRequest: Observable<DataRequest>) -> Observable<(Any)?> {
+        
         if NetworkReachabilityManager()!.isReachable == false {
-            return Observable<JSON?>.create({ (observer) -> Disposable in
-                observer.on(.next(["Error":NSLocalizedString("Unable to contact the server", comment: "") ,
-                                   "IsInternetOff":true]))
+            return Observable<(Any)?>.create({ (observer) -> Disposable in
+                observer.on(.next(["Error":"Unable to contact the server" , "IsInternetOff":true]))
                 observer.on(.completed)
                 return Disposables.create()
             })
         }
-        return Observable<JSON?>.create({ (observer) -> Disposable in
+        
+        return Observable<(Any)?>.create({ (observer) -> Disposable in
             dataRequest.observeOn(MainScheduler.instance).subscribe({ (event) in
+                
                 switch event {
+                    
                 case .next(let e):
-//                    plog(e.debugDescription)
+                    plog(e.description)
                     e.responseJSON(completionHandler: { (dataResponse) in
+                        
                         switch dataResponse.result {
+                            
                         case .success(let data):
-                            let json = JSON(data)
+                            print(data)
+                            guard let json = data as? (Any) else {
+                                observer.onNext(nil)
+                                return
+                            }
+                            
+                            plog("HEADER RESPONSE CODE : \(dataResponse.response!.statusCode)")
+                            if let status = dataResponse.response?.statusCode , status == 401 {
+                                APIManager.shared.sessionManager.cancelAllRequests()
+                                observer.onNext(nil)
+                                //Application.appCoordinator?.showUnAuth()
+                                return
+                            }
+                            
                             observer.onNext(json)
+                            
                         case .failure(let error):
                             plog(error)
                             let errorCode = (error as NSError).code
                             if errorCode == -1005 || errorCode == -1009 {
-                                observer.onNext(["error": NSLocalizedString("Unable to contact the server", comment: ""),
+                                observer.onNext(["Error": NSLocalizedString("Unable to contact the server", comment: ""),
                                                  "IsInternetOff":true])
                             } else {
-                                observer.onNext(["error":error.localizedDescription,
+                                observer.onNext(["Error":error.localizedDescription,
                                                  "IsInternetOff":false])
                             }
-                            
                             observer.onCompleted()
                         }
                     })
-                    
                 case .error(let error):
                     plog(error)
                     observer.onNext(["Error":error.localizedDescription])
@@ -70,11 +87,13 @@ class API {
     }
     
     
-    func regularRequest(apiRouter :APIRouter) -> Observable<APIResult<[String:Any]>> {
-        return API.handleDataRequest(dataRequest: APIManager.shared.requestObservable(api: apiRouter)).map({ (response) -> APIResult<[String:Any]> in
-            return APIResult.success(value: response?.dictionaryValue ?? [:])
+    func regularRequest(apiRouter :APIRouter) -> Observable<APIResult<(Any)>> {
+        return API.handleDataRequest(dataRequest: APIManager.shared.requestObservable(api: apiRouter)).map({ (response) -> APIResult<(Any)> in
+            print(response as Any)
+            return APIResult.success(value: response ?? [:])
         })
+        
     }
     
-
+    
 }

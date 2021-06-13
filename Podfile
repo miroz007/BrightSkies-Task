@@ -10,7 +10,7 @@ target 'BrightSkies-Task' do
   pod 'RxSwift', '~> 5.0'
   pod 'RxCocoa'
   pod 'RxGesture'
-  pod 'Alamofire', '~> 4.9.1'
+  pod 'Alamofire'
   pod 'RxAlamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
@@ -19,5 +19,6 @@ target 'BrightSkies-Task' do
   pod 'IQKeyboardManagerSwift'
   pod 'NVActivityIndicatorView/Extended'
   pod 'FCAlertView'
+  pod 'ReadMoreTextView'
 
 end

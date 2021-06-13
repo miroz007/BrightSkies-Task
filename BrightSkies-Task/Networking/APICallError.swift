@@ -1,12 +1,17 @@
 //
 //  APICallError.swift
-//  BrightSkies-Task
+//  MovieApp
 //
-//  Copyright © 2021 . All rights reserved.
+//  Created by Amir Samir on 12/11/18.
+//  Copyright © 2018 Amir Samir. All rights reserved.
 //
 
 import Foundation
 
+enum InternetConnectionErrorCode: Int {
+    case offline = 10101
+    case unAuth = 1111
+}
 
 enum APICallStatus: Error {
     

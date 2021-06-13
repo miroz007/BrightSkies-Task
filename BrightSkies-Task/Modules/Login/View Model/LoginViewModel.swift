@@ -7,9 +7,7 @@
 //
 
 import Foundation
-import RxSwift
 import RxCocoa
-import Alamofire
 
 class LoginViewModel: BaseViewModel {
     

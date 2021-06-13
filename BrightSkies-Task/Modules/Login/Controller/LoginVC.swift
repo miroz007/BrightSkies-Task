@@ -27,7 +27,7 @@ class LoginVC: BaseViewController {
             guard let self = self else {return}
             if isPush {
                 DispatchQueue.main.async {
-                    let vc = UIStoryboard.main.loginVC
+                    let vc = UIStoryboard.main.recipesVC
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
@@ -38,15 +38,15 @@ class LoginVC: BaseViewController {
     
     func isValid(email:String,password:String) -> Bool {
         if email.isBlank  || password.isBlank  {
-            self.showAlert(withMessage: "Please fill all fields")
+            self.view.showSimpleAlert("Warning", "Please fill all fields", .warning)
             return false
         }
         if !email.isValidateEmail(email: email) {
-            self.showAlert(withMessage: "Email isn't valid email")
+            self.view.showSimpleAlert("Warning", "Email isn't valid email", .warning)
             return false
         }
         if !password.isValidPassword(pass: password) {
-            self.showAlert(withMessage: "Password isn't valid password or less than 8 characters")
+            self.view.showSimpleAlert("Warning", "Password isn't valid password or less than 6 characters", .warning)
             return false
         }
         return true

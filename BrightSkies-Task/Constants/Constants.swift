@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-enum InternetConnectionErrorCode: Int {
-    case offline = 10101
-}
+//enum InternetConnectionErrorCode: Int {
+//    case offline = 10101
+//}
 
 //MARK:- Global Variables
 let Application = UIApplication.shared.delegate as! AppDelegate

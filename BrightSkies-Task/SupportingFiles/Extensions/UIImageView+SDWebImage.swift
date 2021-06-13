@@ -5,13 +5,13 @@
 //  Created by  on 11/13/18.
 //  Copyright © 2021 . All rights reserved.
 //
-
+//
 import Foundation
 import SDWebImage
 
 
 extension UIImageView {
-    
+
     public func downloadImageWithCaching(with url: String,placeholderImage: UIImage? = nil){
         if url == ""{
             self.image = placeholderImage
@@ -23,7 +23,7 @@ extension UIImageView {
         }
         self.sd_setImage(with: imageURL, placeholderImage: placeholderImage, options: [.retryFailed])
     }
-    
+
 }
 
 

@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2936C74D26758F8200B55115 /* RecipeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936C74C26758F8200B55115 /* RecipeDetailsVC.swift */; };
 		295443B12673B6B30050CE58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295443AF2673B6B30050CE58 /* Main.storyboard */; };
 		295443B32673B6B50050CE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295443B22673B6B50050CE58 /* Assets.xcassets */; };
 		295443B62673B6B50050CE58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295443B42673B6B50050CE58 /* LaunchScreen.storyboard */; };
-		295443C32673B7C90050CE58 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443BE2673B7C90050CE58 /* APIResult.swift */; };
-		295443C42673B7C90050CE58 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443BF2673B7C90050CE58 /* API.swift */; };
-		295443C52673B7C90050CE58 /* APICallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443C02673B7C90050CE58 /* APICallError.swift */; };
-		295443C62673B7C90050CE58 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443C12673B7C90050CE58 /* APIManager.swift */; };
-		295443C72673B7C90050CE58 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443C22673B7C90050CE58 /* APIRouter.swift */; };
 		295443CB2673B7D20050CE58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443C92673B7D20050CE58 /* AppDelegate.swift */; };
 		295443CC2673B7D20050CE58 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443CA2673B7D20050CE58 /* AppDependency.swift */; };
 		295443D32673B7D90050CE58 /* StringKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295443CE2673B7D90050CE58 /* StringKeys.swift */; };
@@ -48,21 +44,26 @@
 		295444162673E8280050CE58 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295444152673E8280050CE58 /* AppCoordinator.swift */; };
 		298AFDEC2674400B003DE925 /* BrightSkies-Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDEA2674400B003DE925 /* BrightSkies-Task.xcdatamodeld */; };
 		298AFDF026744A9D003DE925 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDEF26744A9D003DE925 /* RecipesModel.swift */; };
+		298AFDF52674503C003DE925 /* RecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298AFDF42674503C003DE925 /* RecipeCell.xib */; };
+		298AFDF7267457D7003DE925 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDF6267457D7003DE925 /* RecipeCell.swift */; };
+		298AFDF92674589F003DE925 /* RecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDF82674589F003DE925 /* RecipesVC.swift */; };
+		298AFDFB267458B2003DE925 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AFDFA267458B2003DE925 /* RecipesViewModel.swift */; };
+		29E3DA182675B2A900DAC8A0 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DA132675B2A900DAC8A0 /* APIResult.swift */; };
+		29E3DA192675B2A900DAC8A0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DA142675B2A900DAC8A0 /* API.swift */; };
+		29E3DA1A2675B2A900DAC8A0 /* APICallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DA152675B2A900DAC8A0 /* APICallError.swift */; };
+		29E3DA1B2675B2A900DAC8A0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DA162675B2A900DAC8A0 /* APIManager.swift */; };
+		29E3DA1C2675B2A900DAC8A0 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DA172675B2A900DAC8A0 /* APIRouter.swift */; };
 		3C7E31E90C90E868E0EF93CF /* Pods_BrightSkies_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0069A9F351484AF78826DC74 /* Pods-BrightSkies-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSkies-Task.release.xcconfig"; path = "Target Support Files/Pods-BrightSkies-Task/Pods-BrightSkies-Task.release.xcconfig"; sourceTree = "<group>"; };
+		2936C74C26758F8200B55115 /* RecipeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsVC.swift; sourceTree = "<group>"; };
 		295443A62673B6B30050CE58 /* BrightSkies-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrightSkies-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		295443B02673B6B30050CE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		295443B22673B6B50050CE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		295443B52673B6B50050CE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		295443B72673B6B50050CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		295443BE2673B7C90050CE58 /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
-		295443BF2673B7C90050CE58 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		295443C02673B7C90050CE58 /* APICallError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallError.swift; sourceTree = "<group>"; };
-		295443C12673B7C90050CE58 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		295443C22673B7C90050CE58 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		295443C92673B7D20050CE58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		295443CA2673B7D20050CE58 /* AppDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		295443CE2673B7D90050CE58 /* StringKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringKeys.swift; sourceTree = "<group>"; };
@@ -96,6 +97,15 @@
 		295444152673E8280050CE58 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		298AFDEB2674400B003DE925 /* IBTTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IBTTask.xcdatamodel; sourceTree = "<group>"; };
 		298AFDEF26744A9D003DE925 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		298AFDF42674503C003DE925 /* RecipeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeCell.xib; sourceTree = "<group>"; };
+		298AFDF6267457D7003DE925 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		298AFDF82674589F003DE925 /* RecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVC.swift; sourceTree = "<group>"; };
+		298AFDFA267458B2003DE925 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		29E3DA132675B2A900DAC8A0 /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		29E3DA142675B2A900DAC8A0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		29E3DA152675B2A900DAC8A0 /* APICallError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICallError.swift; sourceTree = "<group>"; };
+		29E3DA162675B2A900DAC8A0 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		29E3DA172675B2A900DAC8A0 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		DEBDC3B2134FA68B5ACC76D5 /* Pods-BrightSkies-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightSkies-Task.debug.xcconfig"; path = "Target Support Files/Pods-BrightSkies-Task/Pods-BrightSkies-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		F73388B719BB2EAAABC3EE58 /* Pods_BrightSkies_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightSkies_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +122,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2936C74A2675882000B55115 /* Recipe Details */ = {
+			isa = PBXGroup;
+			children = (
+				2936C74B26758F4E00B55115 /* Controller */,
+			);
+			path = "Recipe Details";
+			sourceTree = "<group>";
+		};
+		2936C74B26758F4E00B55115 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2936C74C26758F8200B55115 /* RecipeDetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2954439D2673B6B30050CE58 = {
 			isa = PBXGroup;
 			children = (
@@ -133,29 +159,18 @@
 		295443A82673B6B30050CE58 /* BrightSkies-Task */ = {
 			isa = PBXGroup;
 			children = (
-				295443BD2673B7C90050CE58 /* Networking */,
 				295443C82673B7D20050CE58 /* App */,
+				29E3DA122675B2A900DAC8A0 /* Networking */,
 				295443CD2673B7D90050CE58 /* Constants */,
-				295443D82673B7E30050CE58 /* Modules */,
 				295443DE2673B7FB0050CE58 /* Boards */,
+				298AFDEE26744A87003DE925 /* Model */,
+				295443D82673B7E30050CE58 /* Modules */,
 				295443E02673B8130050CE58 /* SupportingFiles */,
 				295444022673B8490050CE58 /* Utilty */,
 				295443B72673B6B50050CE58 /* Info.plist */,
 				298AFDEA2674400B003DE925 /* BrightSkies-Task.xcdatamodeld */,
 			);
 			path = "BrightSkies-Task";
-			sourceTree = "<group>";
-		};
-		295443BD2673B7C90050CE58 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				295443BE2673B7C90050CE58 /* APIResult.swift */,
-				295443BF2673B7C90050CE58 /* API.swift */,
-				295443C02673B7C90050CE58 /* APICallError.swift */,
-				295443C12673B7C90050CE58 /* APIManager.swift */,
-				295443C22673B7C90050CE58 /* APIRouter.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		295443C82673B7D20050CE58 /* App */ = {
@@ -187,6 +202,7 @@
 				295443D92673B7F00050CE58 /* Base */,
 				295444092673DD4F0050CE58 /* Login */,
 				298AFDED267442ED003DE925 /* List of Recipes */,
+				2936C74A2675882000B55115 /* Recipe Details */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -294,7 +310,9 @@
 		298AFDED267442ED003DE925 /* List of Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				298AFDEE26744A87003DE925 /* Model */,
+				298AFDF32674502C003DE925 /* View */,
+				298AFDF126744D55003DE925 /* View Model */,
+				298AFDF226744D61003DE925 /* Controller */,
 			);
 			path = "List of Recipes";
 			sourceTree = "<group>";
@@ -305,6 +323,43 @@
 				298AFDEF26744A9D003DE925 /* RecipesModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		298AFDF126744D55003DE925 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				298AFDFA267458B2003DE925 /* RecipesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		298AFDF226744D61003DE925 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				298AFDF82674589F003DE925 /* RecipesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		298AFDF32674502C003DE925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298AFDF42674503C003DE925 /* RecipeCell.xib */,
+				298AFDF6267457D7003DE925 /* RecipeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29E3DA122675B2A900DAC8A0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				29E3DA132675B2A900DAC8A0 /* APIResult.swift */,
+				29E3DA142675B2A900DAC8A0 /* API.swift */,
+				29E3DA152675B2A900DAC8A0 /* APICallError.swift */,
+				29E3DA162675B2A900DAC8A0 /* APIManager.swift */,
+				29E3DA172675B2A900DAC8A0 /* APIRouter.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		86D745189159D97143D9DBDE /* Pods */ = {
@@ -387,6 +442,7 @@
 				295443B62673B6B50050CE58 /* LaunchScreen.storyboard in Resources */,
 				295443B32673B6B50050CE58 /* Assets.xcassets in Resources */,
 				295443B12673B6B30050CE58 /* Main.storyboard in Resources */,
+				298AFDF52674503C003DE925 /* RecipeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +501,8 @@
 				295443D42673B7D90050CE58 /* Extension.swift in Sources */,
 				295443FB2673B8340050CE58 /* UIViewControllerX.swift in Sources */,
 				295443FD2673B8340050CE58 /* UIViewAnchorPoint.swift in Sources */,
+				298AFDF92674589F003DE925 /* RecipesVC.swift in Sources */,
+				29E3DA1C2675B2A900DAC8A0 /* APIRouter.swift in Sources */,
 				295443FE2673B8340050CE58 /* UIViewX.swift in Sources */,
 				295443DC2673B7F00050CE58 /* BaseViewModel.swift in Sources */,
 				295443D72673B7D90050CE58 /* Constants.swift in Sources */,
@@ -455,26 +513,28 @@
 				2954440D2673DE650050CE58 /* LoginVC.swift in Sources */,
 				295443DD2673B7F00050CE58 /* BaseViewController.swift in Sources */,
 				295443CB2673B7D20050CE58 /* AppDelegate.swift in Sources */,
+				2936C74D26758F8200B55115 /* RecipeDetailsVC.swift in Sources */,
 				295444142673E5160050CE58 /* SceneDelegate.swift in Sources */,
-				295443C52673B7C90050CE58 /* APICallError.swift in Sources */,
-				295443C32673B7C90050CE58 /* APIResult.swift in Sources */,
 				295443FC2673B8340050CE58 /* UIImageViewX.swift in Sources */,
 				295443D52673B7D90050CE58 /* Environment.swift in Sources */,
+				29E3DA1A2675B2A900DAC8A0 /* APICallError.swift in Sources */,
+				29E3DA182675B2A900DAC8A0 /* APIResult.swift in Sources */,
 				298AFDF026744A9D003DE925 /* RecipesModel.swift in Sources */,
 				295444002673B8340050CE58 /* UIVisualEffectViewX.swift in Sources */,
 				295443F52673B8340050CE58 /* UIViewController+Reactive.swift in Sources */,
+				298AFDF7267457D7003DE925 /* RecipeCell.swift in Sources */,
 				295443F92673B8340050CE58 /* UILabelX.swift in Sources */,
 				295443D62673B7D90050CE58 /* DateGeneric.swift in Sources */,
 				295444162673E8280050CE58 /* AppCoordinator.swift in Sources */,
 				295444062673B8490050CE58 /* SMS.swift in Sources */,
+				298AFDFB267458B2003DE925 /* RecipesViewModel.swift in Sources */,
 				295443F42673B8340050CE58 /* Dictionary+CamelCase.swift in Sources */,
 				295443CC2673B7D20050CE58 /* AppDependency.swift in Sources */,
-				295443C72673B7C90050CE58 /* APIRouter.swift in Sources */,
-				295443C42673B7C90050CE58 /* API.swift in Sources */,
 				295444072673B8490050CE58 /* Logging.swift in Sources */,
+				29E3DA192675B2A900DAC8A0 /* API.swift in Sources */,
 				295443FF2673B8340050CE58 /* UIButtonX.swift in Sources */,
 				295444082673B8490050CE58 /* ActivityIndicator.swift in Sources */,
-				295443C62673B7C90050CE58 /* APIManager.swift in Sources */,
+				29E3DA1B2675B2A900DAC8A0 /* APIManager.swift in Sources */,
 				295443F82673B8340050CE58 /* UISliderX.swift in Sources */,
 				295443F72673B8340050CE58 /* String+CamelCase.swift in Sources */,
 			);
