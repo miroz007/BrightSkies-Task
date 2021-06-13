@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol favoriteDelegate : class {
+protocol favoriteDelegate : AnyObject {
     func didPressButton(_ tag: Int)
 }
 
@@ -19,7 +19,6 @@ class RecipesVC: BaseViewController{
     
     var recipes : [RecipesModel]?
     var viewModel = RecipesViewModel()
-    var isFav = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,15 +96,6 @@ class RecipesVC: BaseViewController{
 extension RecipesVC: favoriteDelegate {
     func didPressButton(_ tag: Int) {
         let indexPath = IndexPath(row: tag, section: 0)
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: RecipeCell.identifier, for: indexPath) as! RecipeCell
-        
-        if isFav {
-            isFav = false
-            cell.favBtn.setImage(#imageLiteral(resourceName: "Fav"), for: .normal)
-        }else{
-            isFav = true
-            cell.favBtn.setImage(#imageLiteral(resourceName: "unFav"), for: .normal)
-        }
     }
 }
